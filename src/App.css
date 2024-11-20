@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
+/* General light mode styles */
+body {
+  background-color: white;
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Card dark mode styles */
+body.dark-mode .card-body{
+  background-color: #1e1e1e;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body.dark-mode .card-title,
+body.dark-mode .card-text,
+body.dark-mode .text-muted
+ {
+  color: white !important; 
 }
 
-.App-link {
-  color: #61dafb;
+/* Ensure text-muted is properly colored in dark mode */
+body.dark-mode .text-muted {
+  color: white !important;
+}
+body.dark-mode.text-centre{
+  color: #121212;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about{
+  color: black;
 }
