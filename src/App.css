@@ -1,13 +1,14 @@
 /* General light mode styles */
 body {
-  background-color: white;
+  background-color: #e0e0e0;
   color: black;
+  padding-top: 70px;
 }
 
 /* Dark mode styles */
 body.dark-mode {
   background-color: #121212;
-  color: #e0e0e0;
+  color: #e2dddd;
 }
 
 /* Card dark mode styles */
@@ -15,12 +16,17 @@ body.dark-mode .card-body{
   background-color: #1e1e1e;
 }
 
-body.dark-mode .card-title,
+body.dark-mode .card-title ,
 body.dark-mode .card-text,
 body.dark-mode .text-muted
  {
   color: white !important; 
 }
+
+body.dark-mode .about-container{
+  background-color: rgb(26, 25, 25);
+}
+
 
 /* Ensure text-muted is properly colored in dark mode */
 body.dark-mode .text-muted {
@@ -30,6 +36,113 @@ body.dark-mode.text-centre{
   color: #121212;
 }
 
-.about{
-  color: black;
+
+/* General styling for the About page */
+.about-container {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  line-height: 1.6;
+  margin-top: 70px;
+  background-color: #dcdadaf2;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 10vh;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  color: #4CAF50; /* Modern green color */
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Section styling */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 10px;
+
+}
+
+.about-section p {
+  font-size: large;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #555;
+}
+
+/* Team section */
+.team {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+  flex: 1 1 200px;
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  
+}
+
+.team-member p {
+  font-size: large;
+  color: #777;
+}
+
+body.dark-mode .about-header p{
+  color: #bbb;
+}
+
+body.dark-mode .about-section p{
+  color: #bbb;
+}
+
+body.dark-mode .about-section h2{
+  color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .team {
+    flex-direction: column;
+    align-items: center;
+  }
 }
