@@ -53,7 +53,7 @@ export default class App extends Component {
         <div className={`${isDarkMode ? 'bg-dark text-light' : 'bg-light text-dark'}`}>
           <Routes>
             <Route path="/" element={< News  pageSize={8} country="us" category="general" isDarkMode={isDarkMode} searchTerm={this.state.searchTerm}/>} />
-            <Route path="/about" element={<About/>}/>
+            <Route path="/about" element={<About />}/>
             <Route path="/business" element={<News  pageSize={8} country="us" category="business" isDarkMode={isDarkMode} searchTerm={this.state.searchTerm} />} />
             <Route path="/entertainment" element={<News  pageSize={8} country="us" category="entertainment" isDarkMode={isDarkMode} searchTerm={this.state.searchTerm} />} />
             <Route path="/general" element={<News  pageSize={8} country="us" category="general" isDarkMode={isDarkMode} searchTerm={this.state.searchTerm} />} />
